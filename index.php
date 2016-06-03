@@ -104,8 +104,8 @@ if (!isset($p))
 $general = array(
     'title' => $p,
     'description' => 'The home of the internet nobody: M4Numbers. This site '
-                    .'contains details about his exploits in the land of the '
-                    .'internet.',
+                    .'contains documentation details for the various projects'
+                    .' that he has taken part in at some point or another.',
     'location' => 'http://doc.m4numbers.co.uk/',
     'base_location' => 'http://doc.m4numbers.co.uk/',
 );

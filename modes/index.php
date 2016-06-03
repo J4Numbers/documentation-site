@@ -5,9 +5,9 @@ $additional = array();
 
 $additional['title'] = 'Home to that Strange Guy';
 
-$additional['description'] = 'The homepage for M4Numbers: that strange internet '
-                            .'guy. Here are a few things that are on this site '
-                            .'that you might find interesting';
+$additional['description'] = 'The home of the internet nobody: M4Numbers. This site '
+                             .'contains documentation details for the various projects'
+                             .' that he has taken part in at some point or another.';
 
 $additional['files'] = $avail;
 $additional['base'] = $build;
