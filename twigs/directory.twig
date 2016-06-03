@@ -1,0 +1,21 @@
+{% extends "master.twig" %}
+
+{% block content %}
+    <div class="column text-justify">
+    {% if files is empty %}
+        <p>
+            There were no files here. Obviously someone dropped them and didn't tell me. I should file them.
+        </p>
+    {% else %}
+        {% for file in files %}
+            {% if index.first %}
+                <ul>
+            {% endif %}
+            <li><a href="{{ base }}{{ file }}">{{ file }}</a></li>
+            {% if index.last %}
+                </ul>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </div>
+{% endblock %}

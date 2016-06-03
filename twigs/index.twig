@@ -1,0 +1,35 @@
+{% extends "master.twig" %}
+
+{% block content %}
+  <div class="column text-justify">
+    <h1>Welcome!</h1>
+    <p>
+      Welcome to the documentation site that I have started. This part of the site plays host to a number of different
+      documents which detail the running of certain things and areas therein. These documents are all generally written
+      by myself (<a href="https://twitter.com/M4Numbers">@M4Numbers</a>). If they are not, then the documents themselves
+      will give indication as to who they have been written by (along with means to contact them if so wished).
+    </p>
+    <p>
+      This site is run based on PHP and Markdown; the PHP providing the frontend and general niceties of being able to
+      load all of our documents dynamically as we find them on the server, while the Markdown makes the documentation
+      readable by humans instead of people with access to the files that I made because I was too lazy to spin up a
+      whole html document for it.
+    </p>
+    <h2>File Listing:</h2>
+    {% if files is empty %}
+      <p>
+        There were no files here. Obviously someone dropped them and didn't tell me. I should file them.
+      </p>
+    {% else %}
+      {% for file in files %}
+        {% if index.first %}
+          <ul>
+        {% endif %}
+        <li><a href="{{ build }}{{ file }}">{{ file }}</a></li>
+        {% if index.last %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endblock %}
