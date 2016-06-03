@@ -10,7 +10,7 @@ markdown files that were associated with projects.
 A running version of this site can be found at
 [doc.m4numbers.co.uk](http://doc.m4numbers.co.uk).
 
-## Installation
+##Installation
 
 So, this is a site which is basically just a click-and-drag job. Once
 the site has been dragged into your directory, wherever that may be,
